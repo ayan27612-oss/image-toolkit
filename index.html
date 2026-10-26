@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Compress, resize, and convert images for free in your browser. Reduce JPG, PNG, and WebP file sizes without uploading your photos to a server.">
+  <meta name="robots" content="index,follow">
+  <title>PixelTiny — Free Image Compressor, Resizer & Converter</title>
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:title" content="PixelTiny — Free Image Tools">
+  <meta property="og:description" content="Compress, resize, and convert images right in your browser. Free, private, and no account required.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{color-scheme:light;--ink:#172033;--muted:#68738a;--line:#e3e8f1;--paper:#fff;--bg:#f7f8fc;--purple:#635bff;--purple-dark:#4e46df;--mint:#dff8ed;--green:#15734b;--shadow:0 16px 50px rgba(27,39,71,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}.topbar{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.8)}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:850;letter-spacing:-.04em;text-decoration:none;color:var(--ink)}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:var(--purple);color:#fff;font-weight:900}.nav-note{font-size:.88rem;color:var(--muted)}.hero{text-align:center;padding:58px 0 28px}.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border:1px solid #d9d6ff;background:#f0efff;color:#5148df;border-radius:99px;font-size:.8rem;font-weight:750}.hero h1{max-width:780px;margin:18px auto 14px;font-size:clamp(2.1rem,6vw,4rem);line-height:1.06;letter-spacing:-.065em}.hero h1 span{color:var(--purple)}.hero p{max-width:660px;margin:0 auto;color:var(--muted);font-size:1.08rem}.privacy-note{margin:20px auto 0;display:flex;justify-content:center;align-items:center;gap:8px;color:var(--green);font-size:.9rem;font-weight:650}.app{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr);gap:18px;align-items:start;padding:18px 0 54px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.panel-head{padding:22px 24px 16px;border-bottom:1px solid var(--line)}.panel-head h2{margin:0;font-size:1.12rem;letter-spacing:-.02em}.panel-head p{margin:5px 0 0;color:var(--muted);font-size:.9rem}.panel-body{padding:22px 24px}.dropzone{display:flex;min-height:190px;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1.5px dashed #c7cce0;border-radius:17px;background:#fafaff;padding:24px;transition:.2s}.dropzone.drag{border-color:var(--purple);background:#f1f0ff}.upload-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#ebeaff;color:var(--purple);font-size:1.5rem;margin-bottom:12px}.dropzone strong{font-size:1rem}.dropzone p{margin:5px 0 14px;color:var(--muted);font-size:.87rem}.btn{border:0;border-radius:11px;padding:11px 16px;font-weight:750;transition:background .15s,transform .15s}.btn:active{transform:scale(.98)}.primary{background:var(--purple);color:white}.primary:hover{background:var(--purple-dark)}.secondary{background:#efefff;color:#4f47d5}.quiet{background:#f1f3f8;color:var(--ink)}.btn:disabled{opacity:.45;cursor:not-allowed}.field{margin-top:19px}.field label,.label{display:block;margin-bottom:7px;font-size:.9rem;font-weight:750}.field select,.field input[type=number],.field input[type=text]{width:100%;padding:11px 12px;border:1px solid #dce1ec;border-radius:10px;background:white;color:var(--ink)}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.range-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.range-row output{font-size:.86rem;color:var(--purple);font-weight:800}.field input[type=range]{width:100%;accent-color:var(--purple)}.checkline{display:flex;align-items:center;gap:9px;margin-top:12px;font-size:.9rem;color:#3e485d}.checkline input{accent-color:var(--purple);width:16px;height:16px}.file-card{display:none;align-items:center;gap:12px;margin-top:16px;padding:12px;border:1px solid var(--line);border-radius:13px}.file-card.show{display:flex}.file-thumb{width:58px;height:58px;object-fit:cover;border-radius:9px;background:#f0f2f7}.file-info{min-width:0;flex:1}.file-info strong{display:block;overflow-wrap:anywhere;font-size:.9rem}.file-info span{display:block;color:var(--muted);font-size:.82rem}.remove{border:0;background:transparent;color:var(--muted);font-size:1.2rem;padding:4px}.action-row{display:flex;gap:10px;margin-top:22px}.action-row .btn{flex:1}.status{min-height:24px;margin-top:13px;color:var(--muted);font-size:.88rem}.status.error{color:#b42318}.status.success{color:var(--green)}.result{display:none;margin-top:18px;padding:15px;border:1px solid #bce8d2;border-radius:14px;background:#f1fcf6}.result.show{display:block}.result strong{display:block}.result p{margin:4px 0 12px;color:#426653;font-size:.9rem}.result .btn{width:100%}.side-intro{padding:24px}.side-intro h2{font-size:1.1rem;margin:0 0 8px}.side-intro p{color:var(--muted);font-size:.92rem;margin:0}.preview{display:grid;place-items:center;min-height:230px;margin:0 24px 24px;padding:14px;border-radius:15px;background-color:#f8f9fc;background-image:linear-gradient(45deg,#e9ecf3 25%,transparent 25%),linear-gradient(-45deg,#e9ecf3 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e9ecf3 75%),linear-gradient(-45deg,transparent 75%,#e9ecf3 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}.preview img{display:none;max-width:100%;max-height:340px;object-fit:contain;border-radius:8px}.preview img.show{display:block}.preview-empty{text-align:center;color:var(--muted);font-size:.9rem}.preview-empty span{display:block;font-size:2rem;margin-bottom:6px}.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 24px 24px}.stat{padding:13px;border:1px solid var(--line);border-radius:12px}.stat span{display:block;color:var(--muted);font-size:.78rem}.stat strong{display:block;margin-top:3px;font-size:1rem}.content{padding:20px 0 62px}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info-card{background:white;border:1px solid var(--line);border-radius:18px;padding:23px}.info-card h2{margin:0 0 10px;font-size:1.25rem;letter-spacing:-.025em}.info-card p,.info-card li{color:#566176;font-size:.95rem}.info-card ul{padding-left:20px}.info-card li+li{margin-top:7px}.steps{counter-reset:step;list-style:none;padding:0!important}.steps li{counter-increment:step;display:flex;gap:11px}.steps li:before{content:counter(step);flex:0 0 26px;height:26px;display:grid;place-items:center;border-radius:8px;background:#efefff;color:var(--purple);font-weight:800;font-size:.82rem}.faq{margin-top:18px}.faq details{padding:15px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:750}.faq details p{color:#566176;font-size:.93rem}.footer{padding:25px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer a{color:inherit;text-decoration:none}.footer a:hover{text-decoration:underline}.small-links{display:flex;gap:16px;flex-wrap:wrap}.hidden{display:none!important}
+    @media(max-width:760px){.hero{padding:42px 0 20px}.app{grid-template-columns:1fr;padding-top:10px}.content-grid{grid-template-columns:1fr}.panel-head,.panel-body{padding-left:18px;padding-right:18px}.preview{margin-left:18px;margin-right:18px}.mini-stats{padding-left:18px;padding-right:18px}.nav-note{display:none}.hero p{font-size:1rem}.action-row{flex-direction:column}.action-row .btn{width:100%}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"PixelTiny Image Tools","applicationCategory":"MultimediaApplication","operatingSystem":"Any","description":"Free browser-based image compression, resizing and conversion tools. No account required."}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="PixelTiny home"><span class="brand-mark">P</span> PixelTiny</a>
+      <span class="nav-note">Free tools. No account. Your files stay on your device.</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">✦ SIMPLE, FREE IMAGE TOOLS</span>
+      <h1>Make images smaller.<br><span>Keep life simple.</span></h1>
+      <p>Compress images, resize dimensions, or convert formats in a few clicks. No signup, and your files are processed in your browser.</p>
+      <div class="privacy-note"><span aria-hidden="true">✓</span> Images are processed on your device, not uploaded to our server.</div>
+    </section>
+    <section class="app wrap" aria-label="Image tool">
+      <div class="panel">
+        <div class="panel-head"><h2>Image workspace</h2><p>Choose an image, adjust the options, then download your result.</p></div>
+        <div class="panel-body">
+          <div id="dropzone" class="dropzone">
+            <div class="upload-icon" aria-hidden="true">↑</div>
+            <strong>Drop an image here</strong>
+            <p>or choose a file from your device</p>
+            <button class="btn secondary" id="chooseBtn" type="button">Choose image</button>
+            <input id="fileInput" class="hidden" type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,image/avif">
+          </div>
+          <div id="fileCard" class="file-card">
+            <img id="fileThumb" class="file-thumb" alt="">
+            <div class="file-info"><strong id="fileName"></strong><span id="fileMeta"></span></div>
+            <button id="removeBtn" class="remove" type="button" aria-label="Remove image">×</button>
+          </div>
+          <div class="field">
+            <label for="operation">What do you want to do?</label>
+            <select id="operation">
+              <option value="compress">Compress image</option>
+              <option value="resize">Resize image</option>
+              <option value="convert">Convert image format</option>
+            </select>
+          </div>
+          <div id="qualityField" class="field">
+            <div class="range-row"><label for="quality">Image quality</label><output id="qualityOut">80%</output></div>
+            <input id="quality" type="range" min="10" max="100" value="80">
+            <div class="range-row"><span style="font-size:.78rem;color:var(--muted)">Smaller file</span><span style="font-size:.78rem;color:var(--muted)">Higher quality</span></div>
+          </div>
+          <div id="resizeFields" class="field hidden">
+            <span class="label">New dimensions (pixels)</span>
+            <div class="two">
+              <div><label for="width" style="font-size:.8rem;color:var(--muted)">Width</label><input id="width" type="number" min="1" max="12000" placeholder="Width"></div>
+              <div><label for="height" style="font-size:.8rem;color:var(--muted)">Height</label><input id="height" type="number" min="1" max="12000" placeholder="Height"></div>
+            </div>
+            <label class="checkline"><input id="keepRatio" type="checkbox" checked> Keep original aspect ratio</label>
+          </div>
+          <div id="formatField" class="field hidden">
+            <label for="format">Output format</label>
+            <select id="format">
+              <option value="image/webp">WebP (usually smaller)</option>
+              <option value="image/jpeg">JPG / JPEG</option>
+              <option value="image/png">PNG</option>
+            </select>
+            <p style="font-size:.8rem;color:var(--muted);margin:7px 0 0">JPEG does not support transparency; transparent areas become white.</p>
+          </div>
+          <div class="action-row">
+            <button id="processBtn" class="btn primary" type="button" disabled>Process image</button>
+            <button id="resetBtn" class="btn quiet" type="button">Reset</button>
+          </div>
+          <div id="status" class="status" role="status" aria-live="polite">Choose an image to get started.</div>
+          <div id="result" class="result">
+            <strong id="resultTitle">Your image is ready</strong>
+            <p id="resultMeta"></p>
+            <button id="downloadBtn" class="btn primary" type="button">Download image</button>
+          </div>
+        </div>
+      </div>
+      <aside class="panel">
+        <div class="side-intro"><h2>Preview</h2><p>Your original image appears here. After processing, the preview updates to show your result.</p></div>
+        <div class="preview"><div id="previewEmpty" class="preview-empty"><span>▧</span>Your image preview will appear here</div><img id="previewImg" alt="Selected image preview"></div>
+        <div class="mini-stats">
+          <div class="stat"><span>Original size</span><strong id="originalSize">—</strong></div>
+          <div class="stat"><span>Dimensions</span><strong id="dimensions">—</strong></div>
+        </div>
+      </aside>
+    </section>
+    <section class="content wrap">
+      <div class="content-grid">
+        <article class="info-card">
+          <h2>How to use the image tool</h2>
+          <ul class="steps">
+            <li><span><strong>Choose an image.</strong> Select a JPG, PNG, WebP, or another image format supported by your browser.</span></li>
+            <li><span><strong>Pick a task.</strong> Compress the file, change its dimensions, or convert it to another format.</span></li>
+            <li><span><strong>Adjust your settings.</strong> Choose quality, dimensions, or output format as needed.</span></li>
+            <li><span><strong>Process and download.</strong> Review the result and save it to your device.</span></li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h2>Why compress an image?</h2>
+          <p>Large image files can take longer to upload, share, or load on a website. Compressing an image can reduce its file size, which may help pages load faster and make files easier to send.</p>
+          <p>Lower quality settings usually produce smaller JPEG or WebP files, but can introduce visible artifacts. Compare the preview before using the result. PNG is useful when you need lossless output or transparency.</p>
+        </article>
+      </div>
+      <article class="info-card faq">
+        <h2>Frequently asked questions</h2>
+        <details><summary>Are my images uploaded to a server?</summary><p>No. This tool uses your browser to read and process the selected image. The image file is not sent to a PixelTiny image-processing server. If you use browser extensions or other services, their own behavior may differ.</p></details>
+        <details><summary>Is this image compressor free?</summary><p>Yes. The current tools are free to use and do not require an account. Standard browser and device limitations still apply.</p></details>
+        <details><summary>Will compressing an image reduce its quality?</summary><p>It can. Lossy formats such as JPEG and WebP trade some image information for a smaller file. A higher quality setting generally keeps more detail and creates a larger file.</p></details>
+        <details><summary>Which image format should I choose?</summary><p>WebP often provides a useful balance of size and quality for websites. JPEG is widely supported for photographs. PNG is useful for graphics that need transparency or lossless output.</p></details>
+        <details><summary>Why is my converted file not smaller?</summary><p>Some images are already optimized, and some formats prioritize image quality or lossless storage. Try a different output format or quality setting and compare the file sizes.</p></details>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> PixelTiny. Simple image tools for everyone.</span>
+      <nav class="small-links" aria-label="Footer"><a href="#about">About</a><a href="#privacy">Privacy</a><a href="mailto:hello@example.com">Contact</a></nav>
+    </div>
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px">
+      <section id="about"><strong>About PixelTiny</strong><p style="margin:5px 0">PixelTiny is a simple browser-based image utility project designed to help people compress, resize, and convert image files without creating an account.</p></section>
+      <section id="privacy"><strong>Privacy note</strong><p style="margin:5px 0">Image processing happens locally in your browser. This initial version does not include accounts, image uploads, analytics, or advertising. If analytics or advertising are added later, this notice must be updated to explain the data and cookies those services use.</p></section>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const $ = id => document.getElementById(id);
+      const fileInput=$('fileInput'), dropzone=$('dropzone'), operation=$('operation'), quality=$('quality');
+      let sourceFile=null, sourceUrl=null, sourceImage=null, resultBlob=null, resultUrl=null, resultName='image.webp';
+      const setStatus=(text,type='')=>{const el=$('status');el.textContent=text;el.className='status '+type};
+      const formatBytes=n=>{if(!Number.isFinite(n))return '—';if(n<1024)return n+' B';if(n<1024*1024)return (n/1024).toFixed(n<10*1024?1:0)+' KB';return (n/(1024*1024)).toFixed(2)+' MB'};
+      const safeStem=name=>name.replace(/\.[^.]+$/,'').replace(/[^a-z0-9_-]+/gi,'-').replace(/^-+|-+$/g,'')||'image';
+      function clearResult(){if(resultUrl)URL.revokeObjectURL(resultUrl);resultUrl=null;resultBlob=null;$('result').classList.remove('show');$('previewImg').src=sourceUrl||'';}
+      function clearAll(){if(sourceUrl)URL.revokeObjectURL(sourceUrl);if(resultUrl)URL.revokeObjectURL(resultUrl);sourceFile=null;sourceUrl=null;sourceImage=null;resultBlob=null;resultUrl=null;fileInput.value='';$('fileCard').classList.remove('show');$('previewImg').classList.remove('show');$('previewImg').removeAttribute('src');$('previewEmpty').classList.remove('hidden');$('originalSize').textContent='—';$('dimensions').textContent='—';$('processBtn').disabled=true;$('result').classList.remove('show');$('qualityField').classList.toggle('hidden',operation.value!=='compress');$('resizeFields').classList.toggle('hidden',operation.value!=='resize');$('formatField').classList.toggle('hidden',operation.value!=='convert');setStatus('Choose an image to get started.');}
+      function updateOperation(){const op=operation.value;$('qualityField').classList.toggle('hidden',op==='resize');$('resizeFields').classList.toggle('hidden',op!=='resize');$('formatField').classList.toggle('hidden',op!=='convert');if(sourceImage&&op==='resize'){if(!$('width').dataset.edited)$('width').value=sourceImage.naturalWidth;if(!$('height').dataset.edited)$('height').value=sourceImage.naturalHeight;}clearResult();if(sourceFile)setStatus('Settings updated. Process your image when ready.');}
+      function loadFile(file){if(!file)return;if(!file.type.startsWith('image/')){setStatus('Please choose a valid image file.','error');return;}if(file.size>25*1024*1024){setStatus('Please choose an image smaller than 25 MB for reliable phone performance.','error');return;}if(sourceUrl)URL.revokeObjectURL(sourceUrl);if(resultUrl)URL.revokeObjectURL(resultUrl);sourceFile=file;sourceUrl=URL.createObjectURL(file);resultUrl=null;resultBlob=null;const img=new Image();img.onload=()=>{sourceImage=img;$('fileName').textContent=file.name;$('fileMeta').textContent=formatBytes(file.size)+' · '+img.naturalWidth+' × '+img.naturalHeight+' px';$('fileThumb').src=sourceUrl;$('fileCard').classList.add('show');$('previewImg').src=sourceUrl;$('previewImg').classList.add('show');$('previewEmpty').classList.add('hidden');$('originalSize').textContent=formatBytes(file.size);$('dimensions').textContent=img.naturalWidth+' × '+img.naturalHeight;$('processBtn').disabled=false;$('width').value=img.naturalWidth;$('height').value=img.naturalHeight;$('width').dataset.edited='';$('height').dataset.edited='';updateOperation();setStatus('Image loaded. Choose your settings and process it.','success');};img.onerror=()=>{setStatus('This image could not be opened by your browser. Try a JPG, PNG, or WebP file.','error');};img.src=sourceUrl;}
+      $('chooseBtn').addEventListener('click',()=>fileInput.click());fileInput.addEventListener('change',e=>loadFile(e.target.files[0]));$('removeBtn').addEventListener('click',clearAll);$('resetBtn').addEventListener('click',clearAll);operation.addEventListener('change',updateOperation);quality.addEventListener('input',()=>{$('qualityOut').textContent=quality.value+'%';});$('width').addEventListener('input',()=>{$('width').dataset.edited='1';if($('keepRatio').checked&&sourceImage){const w=Number($('width').value);if(w>0)$('height').value=Math.max(1,Math.round(w*sourceImage.naturalHeight/sourceImage.naturalWidth));}});$('height').addEventListener('input',()=>{$('height').dataset.edited='1';if($('keepRatio').checked&&sourceImage){const h=Number($('height').value);if(h>0)$('width').value=Math.max(1,Math.round(h*sourceImage.naturalWidth/sourceImage.naturalHeight));}});
+      ['dragenter','dragover'].forEach(evt=>dropzone.addEventListener(evt,e=>{e.preventDefault();dropzone.classList.add('drag');}));['dragleave','drop'].forEach(evt=>dropzone.addEventListener(evt,e=>{e.preventDefault();dropzone.classList.remove('drag');}));dropzone.addEventListener('drop',e=>loadFile(e.dataTransfer.files[0]));
+      $('processBtn').addEventListener('click',()=>{if(!sourceFile||!sourceImage)return;const op=operation.value;let w=sourceImage.naturalWidth,h=sourceImage.naturalHeight,mime='image/webp',q=Number(quality.value)/100;if(op==='resize'){w=Number($('width').value);h=Number($('height').value);if(!Number.isInteger(w)||!Number.isInteger(h)||w<1||h<1||w>12000||h>12000){setStatus('Enter valid dimensions between 1 and 12,000 pixels.','error');return;}}if(op==='convert')mime=$('format').value;if(op==='compress'){mime=['image/jpeg','image/png','image/webp'].includes(sourceFile.type)?sourceFile.type:'image/webp';}if(mime==='image/png')q=1;const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d');if(!ctx){setStatus('Your browser could not start image processing.','error');return;}if(mime==='image/jpeg'){ctx.fillStyle='#ffffff';ctx.fillRect(0,0,w,h);}ctx.drawImage(sourceImage,0,0,w,h);setStatus('Processing image…');$('processBtn').disabled=true;canvas.toBlob(blob=>{ $('processBtn').disabled=false;if(!blob){setStatus('This output format is not supported by your browser. Try WebP or JPEG.','error');return;}if(resultUrl)URL.revokeObjectURL(resultUrl);resultBlob=blob;resultUrl=URL.createObjectURL(blob);const ext=mime==='image/jpeg'?'jpg':mime==='image/png'?'png':'webp';resultName=safeStem(sourceFile.name)+'-'+(op==='resize'?'resized':op==='compress'?'compressed':'converted')+'.'+ext;$('previewImg').src=resultUrl;$('previewImg').classList.add('show');$('previewEmpty').classList.add('hidden');$('resultTitle').textContent='Your image is ready';const delta=sourceFile.size?Math.round((1-blob.size/sourceFile.size)*100):0;const sizeText=blob.size<sourceFile.size?Math.abs(delta)+'% smaller':blob.size>sourceFile.size?Math.abs(delta)+'% larger':'about the same size';$('resultMeta').textContent=formatBytes(sourceFile.size)+' → '+formatBytes(blob.size)+' · '+w+' × '+h+' px · '+sizeText;$('result').classList.add('show');setStatus('Done. Review the preview and download your image.','success');},mime,q);});
+      $('downloadBtn').addEventListener('click',()=>{if(!resultBlob||!resultUrl)return;const a=document.createElement('a');a.href=resultUrl;a.download=resultName;document.body.appendChild(a);a.click();a.remove();});$('year').textContent=new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
